@@ -1,14 +1,8 @@
 <img src="./src/images/desktop-design.jpg" alt="home-page" style="height: 100px; width:100px;" />
 
-## Link. 🔗
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bfcc995e-24dc-46cc-be3b-dfd47e2571a0/deploy-status)](https://app.netlify.com/sites/card-fm/deploys)
-
-https://card-fm.netlify.app/
-
 # Profile Card Component - Frontend Mentor Challenge.
 
-This is a Frontend Mentor Challenge, newbie-level. A beautiful challenge that I've really enjoyed it. Using Css Flex-box and some Css and Js animation. Pure HTML, CSS and Js.
+This is a Frontend Mentor Challenge, newbie-level. Developed with the Object Oriented Programin - Paradigm. Using Css Flex-box and some Css and Js animation. Pure HTML, CSS and Js.
 
 # Challenge Requirements.
 
@@ -27,8 +21,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Install the dependencies
 
 ```bash
-git clone https://github.com/RenszCamacho/profile-card
-cd profile-card
+git clone https://github.com/RenszCamacho/oop-profile-card
+cd oop-profile-card
 ```
 
 ## Install the dependencies
@@ -51,8 +45,6 @@ npm run dev or yarn dev
 npm run build or yarn build
 ```
 
-This is deployed on Netlify.
-
 ## Tools. ⚒️
 
 - HTML5.
@@ -60,9 +52,9 @@ This is deployed on Netlify.
 - ParcelJs(Bundler).
 - Sass(Css Pre-precesor).
 - Methodology/BEM(Css Especificity).
+- Object Oriented Programin - (Javascript - Paradigm).
 - Git and Github.
 
 ```
 
 ```
-# oop-profile-card
