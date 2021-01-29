@@ -3,9 +3,9 @@ const user = {
   fullName: "Victor Crest",
   age: "26",
   city: "London",
-  followers: "80K",
-  likes: "803K",
-  photos: "1.4K",
+  followers: "8000",
+  likes: "8300",
+  photos: "1400",
 };
 
 export default user;

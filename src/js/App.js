@@ -14,4 +14,5 @@ window.addEventListener("DOMContentLoaded", () => {
     ),
     ui = new UI();
   ui.render(card);
+  ui.animation();
 });

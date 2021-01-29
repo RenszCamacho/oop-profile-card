@@ -22,22 +22,45 @@ class UI {
 
         <ul class="card__footer">
           <li class="card__social">
-            <span class="card__numbers" data-target="8000">${element.followers}</span>
+            <span class="card__numbers" data-target="${element.followers}">0</span>
             <span class="card__label">Followers</span>
           </li>
 
           <li class="card__social">
-            <span class="card__numbers" data-target="8300">${element.likes}</span>
+            <span class="card__numbers" data-target="${element.likes}">0</span>
             <span class="card__label">Likes</span>
           </li>
 
           <li class="card__social">
-            <span class="card__numbers" data-target="1400">${element.photos}</span>
+            <span class="card__numbers" data-target="${element.photos}">0</span>
             <span class="card__label">Photos</span>
           </li>
         </ul>
     `;
     root.appendChild(article);
+  }
+
+  animation() {
+    const counters = document.querySelectorAll(".card__numbers");
+    const speed = 400;
+
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.textContent;
+
+        const inc = target / speed;
+
+        if (count < target) {
+          counter.textContent = Math.ceil(count + inc);
+          setTimeout(updateCount, 1);
+        } else {
+          counter.textContent = target;
+        }
+      };
+
+      updateCount();
+    });
   }
 }
 
