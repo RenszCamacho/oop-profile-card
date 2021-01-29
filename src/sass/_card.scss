@@ -1,0 +1,104 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 38vh, left 49vw top 51vh;
+}
+
+.card {
+  width: 35.3rem;
+  height: 37.6rem;
+  background-color: white;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 5rem;
+  box-shadow: -30px 50px 50px #00000030;
+
+  &__header {
+    width: inherit;
+    height: 14.1rem;
+    background-image: url(../images/bg-pattern-card.svg);
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.5px solid var(--border);
+    padding: 2.3rem 0;
+  }
+
+  &__img {
+    margin-top: -8rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    padding-top: 1.3rem;
+
+    span {
+      color: var(--dark-gray);
+      font-size: inherit;
+      font-weight: 400;
+      padding-left: 0.3rem;
+    }
+  }
+
+  &__location {
+    color: var(--dark-grayish-blue);
+    font-size: 1.5rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.9rem 0;
+    text-align: center;
+  }
+
+  &__social {
+    list-style: none;
+    width: 7rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__numbers {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    display: inline;
+  }
+
+  &__kg {
+    display: inline;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    margin-left: -0.4rem;
+  }
+
+  &__label {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    display: block;
+    padding-top: 0.7rem;
+  }
+}
